@@ -1,0 +1,15 @@
+sequenceDiagram
+    autonumber
+    participant Client
+    box Partie serveur
+    participant Serveur
+    participant BDD
+    end
+    Note over BDD: Serveur de base de données (BDD)
+    Client->>+Serveur: Requête: https://www.google.com
+    Serveur->>+Serveur: Traitement: validation...
+    Serveur->>+BDD: Requête: récupère liste résulats
+    BDD-->>-Serveur: Réponse: [resulat 1, resultat 2,...]
+    Serveur->>+Serveur: Construction page
+    Serveur-->>-Client: Réponse: <html>...</html>
+    Client->>+Client: Affiche résultat

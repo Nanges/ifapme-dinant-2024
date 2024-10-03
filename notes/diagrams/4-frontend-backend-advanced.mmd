@@ -1,0 +1,22 @@
+sequenceDiagram
+    autonumber
+    box Frontend
+    participant Client
+    end
+    box Backend
+    participant BFF
+    participant MS 1
+    participant MS 2
+    end
+    note over BFF: Backend For Frontend
+    note over MS 1: Micro service 1
+    note over MS 2: Micro service 2
+    Client->>+BFF: Request
+    BFF->>+BFF: Process request
+    BFF->>+MS 1: Fetch ms 1 result
+    MS 1-->>-BFF: ms 1 result
+    BFF->>+MS 2: Fetch ms 2 result
+    MS 2-->>-BFF: ms 2 result
+    BFF->>+BFF: Build response
+    BFF-->>Client: response
+    Client->>+Client: Display result

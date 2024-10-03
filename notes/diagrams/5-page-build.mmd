@@ -1,0 +1,22 @@
+sequenceDiagram
+    autonumber
+    Navigateur->>+Serveur: https://www.mon-site.be
+    Serveur-->>+Navigateur: Document html
+    Navigateur->>+Serveur: https/www.mon-site.be/assets/styles.css
+    Serveur-->>+Navigateur: Stylesheet css
+    Navigateur->>+Serveur: https/www.mon-site.be/assets/illustration-1.png
+    Serveur-->>+Navigateur: illustration-1.png
+    Navigateur->>+Serveur: https/www.mon-site.be/assets/illustration-2.png
+    Serveur-->>+Navigateur: illustration-2.png
+    Navigateur->>+Serveur: ...
+    Serveur-->>+Navigateur: ...
+    Navigateur->>+Serveur: https/www.mon-site.be/assets/jquery.min.js
+    Serveur-->>+Navigateur: jquery.min.js
+    Navigateur->>+Serveur: https/www.mon-site.be/assets/main.js
+    Serveur-->>+Navigateur: main.js
+    Navigateur-->>+Navigateur: ready
+    loop Interaction utilisateur
+        Navigateur->>+Serveur:  Accès fichier
+        Serveur-->>+Navigateur: Téléchargement fichier
+    end
+
