@@ -1,0 +1,6 @@
+flowchart TD
+    B[Entrer montant] --> C{Validation}
+    C --> |NOK| D[Affiche erreur]
+    D --> B
+    C --> |OK| E[Calcul coupures]
+    E --> F[Affiche résultat]

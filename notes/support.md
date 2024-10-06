@@ -3,6 +3,8 @@
 Pour les notes, je vous redirige vers ce site: [Le Tutoriel JavaScript Moderne](https://fr.javascript.info/)<br/>
 Afin de vous faciliter la tâche, voici la liste des articles relatifs à tout ce qu'on a vu durant le cours:
 
+## Bases
+
 1. [TLDR](https://fr.javascript.info/javascript-specials) (Résumé de ce qui a été vu, mais je vous recommande quand même la liste ci-dessous 🙂)
 2. [Introduction](https://fr.javascript.info/intro)
 3. [Console de développement](https://fr.javascript.info/devtools)
@@ -19,5 +21,12 @@ Afin de vous faciliter la tâche, voici la liste des articles relatifs à tout c
 14. [Boucles](https://fr.javascript.info/while-for)
 15. [Switch](https://fr.javascript.info/switch)
 16. [Fonctions: Les bases](https://fr.javascript.info/function-basics)
+17. [Fonctions Expressions](https://fr.javascript.info/function-expressions)
+18. [Arrow function](https://fr.javascript.info/arrow-functions-basics)
+
+## Tableau
+
+1. [Arrays](https://fr.javascript.info/array)
+2. [Méthodes de tableau](https://fr.javascript.info/array-methods)
 
 >Note: Cette liste va évoluer au fur et à mesure que l'on avancera dans le cours
