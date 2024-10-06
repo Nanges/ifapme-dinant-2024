@@ -8,6 +8,22 @@ Donc si la somme est de 145, le résulat sera le suivant:
 - 2 billets de 20
 - 1 billet de 5
 
+## Visuel
+
+![](./screen.png)
+
+### Balises HTML à utiliser
+
+- `<input/>`: `number` ou `text`. À vous d'adapter votre validation en fonction du type d'entrée
+- `<button>`: Vous devrez lier un **événement clic** sur votre bouton. Je vous laisse googler ça 😉
+- `<ul>`: Listing des résultats
+
+### Quelques instructions JS pour manipuler le code HTML
+
+- `document.getElementById`: Sélectionne un élément désigné par son `id`.
+- `document.querySelector`: Sélectionne un élément en fonction du sélecteur. Ex: `.main-content p` correspond à l'ensemble des `<p>` se trouvant dans un élément ayant la classe `.main-content`.
+- `innerHTML`: Permet de modifier le contenu d'un élément.
+
 ## Déroulement
 
 ### Happy flow 🙂
@@ -49,7 +65,7 @@ const result = makeMoneyChange(initialAmount, BILL_TYPE_LIST);
 
 ### Divides and conquers
 
-Divisier pour régner! C'est la règle d'or. Le programme pourrait être découpé de la sorte:
+Diviser pour régner! C'est la règle d'or. Le programme pourrait être découpé de la sorte:
 
 - Une fonction pour la validation
 - Une fonction qui effectue le changement en coupure (`makeMoneyChange`)
