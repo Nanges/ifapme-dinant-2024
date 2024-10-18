@@ -6,4 +6,5 @@ Afin de pouvoir afficher certains diagrammes, l'extension [Mermaid Editor](https
 
 ## Contenu
 
-- [Support de cours](./notes/support.md)
+- [Support HTML](./notes/support-html.md)
+- [Support Javascript](./notes/support-js.md)

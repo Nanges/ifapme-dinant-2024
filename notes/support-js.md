@@ -1,4 +1,4 @@
-# Support de cours
+# Support de cours - Javascript
 
 Pour les notes, je vous redirige vers ce site: [Le Tutoriel JavaScript Moderne](https://fr.javascript.info/)<br/>
 Afin de vous faciliter la tâche, voici la liste des articles relatifs à tout ce qu'on a vu durant le cours:
