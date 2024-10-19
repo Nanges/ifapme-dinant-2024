@@ -1,10 +1,10 @@
 const CURRENCY_CUTS = [
-    { value:.01, description: "pièce(s) de 1 centime" },
-    { value:.02, description: "pièce(s) de 2 centimes" },
-    { value:.05, description: "pièce(s) de 5 centimes" },
-    { value:.1, description: "pièce(s) de 10 centimes" },
-    { value:.2, description: "pièce(s) de 20 centimes" },
-    { value:.5, description: "pièce(s) de 50 centimes" },
+    { value:0.01, description: "pièce(s) de 1 centime" },
+    { value:0.02, description: "pièce(s) de 2 centimes" },
+    { value:0.05, description: "pièce(s) de 5 centimes" },
+    { value:0.1, description: "pièce(s) de 10 centimes" },
+    { value:0.2, description: "pièce(s) de 20 centimes" },
+    { value:0.5, description: "pièce(s) de 50 centimes" },
     { value:1, description: "pièce(s) de 1 euro" },
     { value:2, description: "pièce(s) de 2 euros" },
     { value:5, description: "billet(s) de 5 euros" },
@@ -51,9 +51,9 @@ function computeRemaining(currentRemaining, cutValue){
 }
 
 function start(){
-    const value = document.getElementById('amount').value;
+    const amount = document.getElementById('amount').value;
     const resultElm = document.getElementById('result');
-    const result = computeChange(value);
+    const result = computeChange(amount);
     
     resultElm.innerHTML = `<ul>${resultToHTML(result)}</ul>`;
 }
