@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        body{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height:100vh;
+        }
+
+        /*Atoms*/
+        :root{
+            /*Colors*/
+            --primary-color-1: #05804d;
+            --primary-color-2: #099159;
+            --neutral-color-1: #fff;
+
+            /*Spacing*/
+            --spacing-xs: 16px;
+            --spacing-s: 20px;
+            --spacing-m: 24px;
+            --spacing-l: 32px;
+            --spacing-xm: 40px;
+        }
+        
+        /*Shape*/
+        .rounded-square{
+            border-radius: 4px;
+        }
+
+        /**/
+
+        .my-button{
+            background-color: var(--primary-color-1);
+            color: var(--neutral-color-1);
+            height:40px;
+            padding-left:16px;
+            padding-right:16px;
+            border:none;
+        }
+
+        .my-button:hover{
+            background-color: var(--primary-color-2);
+        }
+
+        .my-button:focus-visible{
+            outline: var(--primary-color-2) solid 2px;
+            outline-offset: 2px; 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="my-button rounded-square" >Ok</button>
+    </div>
+    
+</body>
+</html>
