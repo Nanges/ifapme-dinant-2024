@@ -1,0 +1,46 @@
+/* Common */
+.Button{
+    height:40px;
+    padding-left:16px;
+    padding-right:16px;
+    border:none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.Button:focus-visible{
+    outline-width: 2px;
+    outline-offset: 2px;
+    outline-style: solid;
+}
+
+/* Primary variant */
+.Primary:active:hover,
+.Primary{
+    background-color: var(--primary-color-1);
+    color: var(--white);
+}
+
+.Primary:hover{
+    background-color: var(--primary-color-2);
+}
+
+.Primary:focus-visible{
+    outline-color: var(--primary-color-1);
+}
+
+/* Secondary variant */
+.Secondary:active:hover,
+.Secondary{
+    background-color: transparent;
+    color: var(--primary-color-1);
+    border: 2px solid var(--primary-color-1);
+}
+
+.Secondary:hover{
+    background-color: var(--neutral-color-2);
+}
+
+.Secondary:focus-visible{
+    outline-color: var(--primary-color-1);
+}

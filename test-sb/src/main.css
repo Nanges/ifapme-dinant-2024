@@ -1,0 +1,27 @@
+/*Atoms*/
+:root{
+    /* Colors */
+
+    /* Primary */
+    --primary-color-1: #05804d;
+    --primary-color-2: #099159;
+
+    /* Secondary */
+    --secondary-color-1:#dd5f17;
+    --secondary-color-2:#ec6719;
+
+    /* Neutral */
+    --neutral-color-2: #e3e3e3;
+    --neutral-color-3: #d5d5d5;
+
+    --white: #fff;
+    --black: #000;
+
+    /*Spacing*/
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 20px;
+    --spacing-xl: 24px;
+    --spacing-xxl: 32px;
+}
