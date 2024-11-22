@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# Introduction à storybook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Prérequis
 
-Currently, two official plugins are available:
+- HTML
+- CSS
+- Typescript (Javascript)
+- React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+1. Télécharger et installer [Node Js](https://nodejs.org/en)
+2. Ouvrir un terminal à la racine du projet et taper la commande `npm i`.
+   1. Sous vscode (windows), `ctrl + j` lance le terminal
+3. L'installation est terminée! 🙂
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Lancer Storybook
 
-- Configure the top-level `parserOptions` property like this:
+- En ouvrant un terminal et en tapant `npm run storybook`
+- Via le fichier [package.json](./package.json) dans la partie `scripts`. En survolant `storybook`, un menu contextuel apparaît, cliquer sur `Run script`
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Lancer l'application vite (optionel)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+cf la section [Lancer Storybook](#lancer-storybook) mais en remplaçant `storybook` par `dev`
