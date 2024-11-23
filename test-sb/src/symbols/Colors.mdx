@@ -1,0 +1,28 @@
+{/* Colors.mdx */}
+
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+<Meta title="Identity/Colors" />
+
+<ColorPalette>
+  <ColorItem
+    title="Acme green"
+    subtitle="Green palette"
+    colors={{ "--primary-color-1":"#05804d", "--primary-color-2":'#099159' }}
+  />
+  <ColorItem 
+    title="Acme orange" 
+    subtitle="Orange palette" 
+    colors={{ "--secondary-color-1": '#dd5f17', "--secondary-color-2": '#ec6719' }} 
+  />
+  <ColorItem
+    title="Acme neutral"
+    subtitle="Neutral palette"
+    colors={{
+      "--white":"#fff",
+      "--neutral-color-2":"#e3e3e3",
+      "--neutral-color-3":"#d5d5d5",
+      "--black":"#000",
+    }}
+  />
+</ColorPalette>
