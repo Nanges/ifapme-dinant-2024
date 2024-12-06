@@ -1,0 +1,21 @@
+.Badge{
+    padding-left:16px;
+    padding-right:16px;
+    height:20px;
+    border-radius:10px;
+}
+
+.Published{
+    color:#fff;
+    background-color: darkgreen;
+}
+
+.Draft{
+    color:#222;
+    background-color: #ddd;
+}
+
+.Archived{
+    color:#fff;
+    background-color: purple;
+}

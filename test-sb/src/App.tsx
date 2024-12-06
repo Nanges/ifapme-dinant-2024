@@ -1,10 +1,10 @@
-import { Button } from "./components/Button/Button";
 import styles from "./App.module.css";
+import { Badge } from "./components/Badge/Badge";
 
 export function App(){
   return <div className={styles.App}>
-    <Button variant='Primary'>Primary button</Button>
-    <Button variant='Secondary'>Secondary button</Button>
-    <Button>Default</Button>
+    <Badge status="Draft">Brouillon</Badge>
+    <Badge status="Published">Publié</Badge>
+    <Badge status="Archived">Archivé</Badge>
   </div>
 }
