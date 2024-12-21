@@ -9,14 +9,28 @@
 
 ## Installation
 
+### En téléchargeant le zip via github
+
 1. Télécharger et installer [Node Js](https://nodejs.org/en)
 2. Ouvrir un terminal à la racine du projet et taper la commande `npm i`.
    1. Sous vscode (windows), `ctrl + j` lance le terminal
 3. L'installation est terminée! 🙂
 
+### En utilisant git
+
+1. Assurez-vous d'avoir installé Git sur votre machine (inclu dans Mac visiblement)
+2. Lancez la commande `git clone https://github.com/Nanges/ifapme-dinant-2024.git` dans le répertoire de votre choix. La commande va vous créer un sous répertoire `ifapme-dinant-2024`.
+3. Installez les packages nodes (Indispensables pour faire tourner storybook)
+   - Soit via le terminal. 
+     1. Naviguer dans le répertoire `test-sb` via la commande `cd`. Ex: `cd C:/COURS/ifapme-dinant-2024/test-sb` (Dans l'exemple, l'emplacement se trouve sur le disque C, dans le répertoire COURS).
+     2. Taper la commande `npm i`
+   - Soit via vscode si vous ouvrez le projet `test-sb`.
+     1. `ctrl + j` lance le terminal dans vscode
+     2. Taper la commande `npm i`
+
 ## Lancer Storybook
 
-- En ouvrant un terminal et en tapant `npm run storybook`
+- En ouvrant un terminal et en tapant `npm run storybook`. ⚠ Assurez-vous de lancer la commande dans le bon répertoire (`./test-sb`) au risque d'avoir un message d'erreur comme quoi la commande est introuvable
 - Via le fichier [package.json](./package.json) dans la partie `scripts`. En survolant `storybook`, un menu contextuel apparaît, cliquer sur `Run script`
 
 ### Lancer l'application vite (optionel)
@@ -50,15 +64,14 @@ export function MyComponent(){
 }
 ```
 
-5. Pour tester votre composant avec `vite`, importer le composant dans `App.tsx` qui se trouve à la racine de `./src`
+1. Pour tester votre composant avec `vite`, remplacez le contenu de `App.tsx` par le bout de code suivant:
 
 ```typescript
-//... Autres import
+import styles from "./App.module.css";
 import { MyComponent } from "./components/MyComponent/MyComponent";
 
 export function App(){
   return <div className={styles.App}>
-   {/* Autres composants */}
     <MyComponent />
   </div>
 }
