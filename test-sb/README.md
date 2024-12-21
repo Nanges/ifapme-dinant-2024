@@ -27,6 +27,7 @@
    - Soit via vscode si vous ouvrez le projet `test-sb`.
      1. `ctrl + j` lance le terminal dans vscode
      2. Taper la commande `npm i`
+4. L'installation est terminée! 🙂
 
 ## Lancer Storybook
 
