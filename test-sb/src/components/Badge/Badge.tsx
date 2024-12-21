@@ -1,12 +1,11 @@
-import { PropsWithChildren } from "react";
-import styles from "./Badge.module.css";
-import cn from "classnames";
+import styles from "./Badge.module.css"
+import cn from "classnames"
 
-export type BadgeProps = PropsWithChildren<{
-    status:'Published' | 'Draft' | 'Archived';
-}>;
+export type BadgeProps = {
+    status:"Draft"|"Published"|"Archived";
+}
 
-export function Badge(props:BadgeProps){
-    const {status, children} = props;
-    return <span className={cn(styles.Badge, styles[status])}>{children}</span>
+export function Badge(props: BadgeProps){
+    const badgeClasses = cn(styles.Badge, styles[props.status]);
+    return <span className={badgeClasses}>{props.status}</span>
 }
