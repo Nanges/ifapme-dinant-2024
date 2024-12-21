@@ -25,3 +25,7 @@
     --spacing-xl: 24px;
     --spacing-xxl: 32px;
 }
+
+html{
+    font-family: Arial;
+}

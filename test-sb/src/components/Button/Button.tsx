@@ -4,10 +4,6 @@ import cn from 'classnames';
 
 type ButtonVariant = 'Primary' | 'Secondary';
 
-// export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-//     variant?: ButtonVariant;
-// }
-
 export type ButtonProps = PropsWithChildren<{
     variant?: ButtonVariant;
     className?:string;
