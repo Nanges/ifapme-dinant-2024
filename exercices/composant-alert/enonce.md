@@ -6,13 +6,22 @@ Le but de cet exercice est de concevoir un composant affichant une alerte et de 
 
 ![](preview.png)
 
-## Dossier et fichiers à créer
+## Signature
+
+```html
+<AlertBox variant="Info" title="Titre de l'alerte">Contenu de l'alerte</AlertBox>
+```
+
+## Dossier et fichiers à remettre
 
 Le code source du composant va se trouver dans `test-sb/src/components/AlertBox` et devra contenir les fichiers suivants:
 
 - AlertBox.tsx
 - AlertBox.module.css
 - AlertBox.stories.ts
+
+> **NOTE**: Si vous avez des fichiers additionnels (composants d'icône ou autre), n'oubliez pas de les transmettre.
+> Tout comme si vous installez une librairie, n'oubliez de le communiquer également via une note, un readme.md etc...
 
 ## Caractéristiques techniques
 
@@ -128,5 +137,19 @@ export function MyComponent(){
 > **NOTE**: Les attributs `fill-rule` & `clip-rule` doivent être renommé en camel case (`fillRule` & `clipRule`) sinon React va générer une erreur dans le navigateur.
 
 > **NOTE 2**: Si vous créez vos composants d'icône dans des fichiers séparés (ce qui est une bonne pratique), n'oubliez pas le mot-clé `export` devant votre fonction de composant.
+
+### Inspirez-vous de ce qui a été fait en classe
+
+- Composant Button
+- Composant Badge
+
+## Liens utiles
+
+- [CSS Flexbox Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Create and Nesting components](https://react.dev/learn#components)
+- [Writing markup with JSX](https://react.dev/learn#writing-markup-with-jsx)
+- [Adding styles](https://react.dev/learn#adding-styles)
+- [Displaying data](https://react.dev/learn#displaying-data)
+- [Conditional rendering](https://react.dev/learn#conditional-rendering)
 
 Bon travail!
