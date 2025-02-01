@@ -1,0 +1,52 @@
+.AlertBox{
+    display:flex;
+    gap:12px;
+    min-width:600px;
+    padding:16px;
+    border-style:solid;
+    border-width:1px;
+    font-size:16px;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+
+.AlertBoxHeader{
+    margin: 0px;
+    font-weight: bold;
+}
+
+.AlertBoxBody{
+    font-size:12px;
+}
+
+.AlertBoxContent{
+    flex-grow: 1;
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.Info{
+    border-color: #004b7c;
+    color: #004b7c;
+    background-color: #afd4ff;
+}
+
+.Success{
+    border-color: #007c06;
+    color: #007c06;
+    background-color: #afffc7;
+}
+
+.Warning{
+    border-color: #7c6900;
+    color: #7c6900;
+    background-color: #ffeaaf;
+}
+
+.Error{
+    border-color: #7c0000;
+    color: #7c0000;
+    background-color: #ffc1c1;
+}
