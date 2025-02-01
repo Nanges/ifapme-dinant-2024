@@ -12,7 +12,7 @@ Le but de cet exercice est de concevoir un composant affichant une alerte et de 
 <AlertBox variant="Info" title="Titre de l'alerte">Contenu de l'alerte</AlertBox>
 ```
 
-## Dossier et fichiers à remettre
+## Fichiers à produire
 
 Le code source du composant va se trouver dans `test-sb/src/components/AlertBox` et devra contenir les fichiers suivants:
 
@@ -20,7 +20,7 @@ Le code source du composant va se trouver dans `test-sb/src/components/AlertBox`
 - AlertBox.module.css
 - AlertBox.stories.ts
 
-> **NOTE**: Si vous avez des fichiers additionnels (composants d'icône ou autre), n'oubliez pas de les transmettre.
+> **NOTE**: Si vous avez des fichiers additionnels (composants pour icônes ou autres), n'oubliez pas de les transmettre.
 > Tout comme si vous installez une librairie, n'oubliez de le communiquer également via une note, un readme.md etc...
 
 ## Caractéristiques techniques
@@ -68,7 +68,7 @@ Les couleurs claires sont utilisées pour l'arrière-plan.
 
 ### Bac à sable
 
-Avant de vous attaquer à la partie React/Storybook, je vous recommande vivement dans un premier temps de créer le code HTML/CSS dans un fichier à part qui vous servira de "bac à sable".
+Avant de vous attaquer à la partie React/Storybook, je vous recommande vivement de créer le code HTML/CSS dans un fichier à part qui vous servira de "bac à sable".
 C'est une pratique que j'applique systématiquement avant de m'attaquer à la partie framework pour des composants complexes.
 
   ```html
@@ -89,10 +89,12 @@ C'est une pratique que j'applique systématiquement avant de m'attaquer à la pa
   ```
 De cette façon vous pourrez vous assurer que le code HTML/CSS est fonctionnel.
 
+Ensuite, vous créez votre composant React en copiant et en adaptant la structure provenant du bac à sable.
+
 ### SoC (Separation of Concern)
 
 Il s'agit ici d'une règle qu'on applique dans le développement. Dans ce cas-ci, vous pourrez l'appliquer pour la conception de vos classes css.
-En effet, on peut séparer les styles en deux catégories:
+En effet, les styles peuvent être séparés en deux catégories:
 - Styles communs (espacement, police etc...)
 - Styles spécifiques au variant (Success, Error,...)
 
