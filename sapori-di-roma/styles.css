@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Just+Me+Again+Down+Here&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    /* Colors */
+    --color-egg-shell: #FFF7ED;
+    --color-beige: #DECCB8;
+    --color-blue: #3D5762;
+    --color-dark-brown: #322D28;
+
+    /* Typo */
+    --font-identity: "Just Me Again Down Here", serif;
+    --font-head: "Jacques Francois Regular", serif;
+    --font-body: "Poppins", sans-serif;
+}
+
+
+
+h1{
+    font-family: var(--font-identity);
+}
+
+h2{
+    font-family: var(--font-head);
+}
+
+p{
+    font-family: var(--font-body);
+}
