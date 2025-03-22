@@ -25,13 +25,14 @@
                 <label for="madame">Madame</label>
             </div>
             <div class="field-row">
-                <div class="field">
+                <div class="field has-error">
                     <label for="champnom">Nom</label>
-                    <input type="text" name="nom" id="champnom" value="Robert"/>
+                    <input type="text" name="nom" id="champnom" value="Robert" required/>
+                    <span class="error-msg">Nom requis</span>
                 </div>
                 <div class="field">
                     <label for="champprenom">Prénom</label>
-                    <input type="text" name="prenom" id="champprenom" placeholder="ex: Martin"/>
+                    <input type="text" name="prenom" id="champprenom" placeholder="ex: Martin" required/>
                 </div>
             </div>
         </fieldset>
@@ -74,7 +75,7 @@
         <div>
             <input type="color" name="colorpicker"/>
         </div> -->
-        <button type="submit">Envoyer</button>
+        <button type="submit" class="btn">Envoyer</button>
     </form>
 </body>
 </html>

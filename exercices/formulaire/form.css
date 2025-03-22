@@ -30,3 +30,64 @@ legend{
     margin-bottom: 16px;
     flex: 1 0 100%;
 }
+
+.btn{
+    border:none;
+    background-color:rgb(66, 123, 229);
+    color:#fff;
+    padding:8px 16px;
+}
+
+.btn:hover{
+    background-color:rgb(49, 95, 180);
+}
+
+.btn:focus-visible{
+    outline: 4px solid rgba(49, 95, 180, .4);
+    background-color:rgb(49, 95, 180);
+}
+
+input[type="text"]{
+    border:1px solid #aaa;
+    line-height:18px;
+    height: 20px;
+}
+
+input[type="text"]:focus-visible{
+    outline: 4px solid rgba(49, 95, 180, .4);
+    border-color:rgb(49, 95, 180);
+}
+
+.has-error input[type="text"]{
+    border-color:red;
+}
+
+.has-error,
+.has-error input[type="text"] {
+    color:red;
+}
+
+.has-error input[type="text"]:focus-visible{
+    outline-color: rgba(255,0,0,.2);
+}
+
+.error-msg{
+    display:none;
+    font-size:12px;
+}
+
+.has-error .error-msg{
+    display:block;
+}
+
+.required::after{
+    content:"*";
+    margin-left: 4px;
+    color:rgb(255, 64, 0)
+}
+
+.field:has(input[type="text"][required]) label::after{
+    content:"*";
+    margin-left:4px;
+    color:red;
+}
