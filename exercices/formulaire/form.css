@@ -1,0 +1,32 @@
+.fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding:0;
+    margin: 0;
+    gap: 24px;
+}
+
+.fieldset .field {
+    display:flex;
+    flex-direction: column;
+    gap:4px;
+    margin-bottom: 16px;
+    flex: 1 0 0;
+}
+
+.fieldset .fullwidth-field{
+    flex: 1 0 100%;
+}
+
+.fieldset .field-row{
+    display:flex;
+    gap:24px;
+}
+
+legend{
+    padding:0;
+    font-size: 20px;
+    margin-bottom: 16px;
+    flex: 1 0 100%;
+}

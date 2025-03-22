@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        <div>
+            <label for="champNom">Nom:</label>
+            <input type="text" name="nom" id="champNom"/>
+        </div>
+        <div>
+            <label for="champPassword">Mot de passe:</label>
+            <input type="password" name="password" id="champPassword"/>
+        </div>
+        <div>
+            <label>
+                <input type="radio" name="newsletter" value="flux rss"/>
+                <span>Flux RSS</span>
+            </label>
+            <label>
+                <input type="radio" name="newsletter" value="email"/>
+                <span>Email</span>
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" name="pills" value="blue"/>
+                <span>Blue pill</span>
+            </label>
+            <label>
+                <input type="checkbox" name="pills" value="red"/>
+                <span>Red pill</span>
+            </label>
+        </div>
+        <div>
+            <button type="submit">Envoyer</button>
+        </div>
+    </form>
+</body>
+</html>
