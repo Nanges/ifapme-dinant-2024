@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        form {
+            display:flex;
+            gap: 16px;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <!-- <form method="get" action="https://www.google.com/search">
+        <label for="search">Recherche</label>
+        <input type="text" name="q" id="search"/>
+        <button type="submit">Envoyer</button>
+    </form> -->
+    <form method="post">
+        <div>
+            <label for="champnom">Nom</label>
+            <input type="text" name="nom" id="champnom" value="Robert"/>
+        </div>
+        <div>
+            <label for="champprenom">Prénom</label>
+            <input type="text" name="prenom" id="champprenom" placeholder="ex: Martin"/>
+        </div>
+        <div>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password"/>
+        </div>
+        <div>
+            <label for="condition">J'accepte de faire du javascript</label>
+            <input type="checkbox" id="condition" name="condition" value="test"/>
+        </div>
+        <div>
+            <input type="radio" name="titre" id="monsieur" value="monsieur"/>
+            <label for="monsieur">Monsieur</label>
+            <input type="radio" name="titre" id="madame" value="madame">
+            <label for="madame">Madame</label>
+        </div>
+        <div>
+            <label for="birthday">Anniversaire</label>
+            <input type="date" name="birthday" id="birthday"/>
+        </div>
+        <div>
+            <label for="datehour">Date et Heure</label>
+            <input type="datetime-local" name="datehour" id="datehour"/>
+        </div>
+        <div>
+            <label for="time">Heure</label>
+            <input type="time" name="time" id="time"/>
+        </div>
+        <div>
+            <label for="color">Couleur</label>
+            <select id="color" name="color" multiple>
+                <option></option>
+                <optgroup label="base colors">
+                    <option value="red">Rouge</option>
+                    <option value="blue">Bleu</option>
+                    <option value="green">Vert</option>
+                </optgroup>
+                <optgroup label="funky colors">
+                    <option value="kaki">Kaki</option>
+                    <option value="pink">Rose</option>
+                    <option value="yellow">Jaune</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <input type="color" name="colorpicker"/>
+        </div>
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>

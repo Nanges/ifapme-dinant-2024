@@ -13,16 +13,40 @@
     --font-body: "Poppins", sans-serif;
 }
 
-
-
-h1{
-    font-family: var(--font-identity);
-}
-
-h2{
-    font-family: var(--font-head);
-}
-
-p{
+html {
+    font-size: 100%; /*16px*/
     font-family: var(--font-body);
+    background-color: var(--color-beige);
+}
+
+/* Button CTA */
+.button-cta{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+    font-family: inherit;
+    background-color: var(--color-blue);
+    color: var(--color-egg-shell);
+}
+
+.button-cta:hover{
+    background-color: var(--color-dark-brown);
+}
+
+/* Arrow button */
+.arrow-button{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 2.75rem;
+    border: none;
+    text-decoration: none;
+
+    background-color: var(--color-blue);
+    color: var(--color-egg-shell);
 }
